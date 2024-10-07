@@ -1,0 +1,46 @@
+<div class="container">
+    <h1>Upload QR Code</h1>
+    
+    <input type="file" (change)="onFileChange($event)" accept="image/*" />
+    
+    <form [formGroup]="qrForm" (ngSubmit)="onSubmit()">
+        <label for="BankRef">Bank Ref:</label>
+        <input id="BankRef" formControlName="BankRef">
+      
+        <label for="BillerNo">Biller No:</label>
+        <input id="BillerNo" formControlName="BillerNo">
+      
+        <label for="Ref1">Ref1:</label>
+        <input id="Ref1" formControlName="Ref1">
+      
+        <label for="Ref2">Ref2:</label>
+        <input id="Ref2" formControlName="Ref2">
+      
+        <label for="Amount">Amount:</label>
+        <input id="Amount" formControlName="Amount">
+      
+        <label for="QRId">QR ID:</label>
+        <input id="QRId" formControlName="QRId">
+      
+        <label for="PayerName">Payer Name:</label>
+        <input id="PayerName" formControlName="PayerName">
+      
+        <label for="PayerBank">Payer Bank:</label>
+        <input id="PayerBank" formControlName="PayerBank">
+      
+        <label for="Fee">Fee:</label>
+        <input id="Fee" formControlName="Fee">
+      
+        <label for="ResultCode">Result Code:</label>
+        <input id="ResultCode" formControlName="ResultCode">
+      
+        <label for="ResultDesc">Result Desc:</label>
+        <input id="ResultDesc" formControlName="ResultDesc">
+      
+        <label for="TransDate">Transaction Date:</label>
+        <input id="TransDate" formControlName="TransDate">
+      
+        <button type="submit">Submit</button>
+      </form>
+  </div>
+  
